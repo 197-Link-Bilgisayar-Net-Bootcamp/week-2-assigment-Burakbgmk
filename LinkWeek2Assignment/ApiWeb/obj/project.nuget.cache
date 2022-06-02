@@ -1,11 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "HwpCzwpyCzabcX/CtFhOwPBUXkfHK2ytSxEnwOdJbpQsqyj+YRqNx8+uIa+FODQT+98nzgbW+DWbu0uHrnQh4g==",
+  "dgSpecHash": "cLVVL5GryUCBlUumE+LeL+jmBjrgX96ibb4M5MxVkKMUqQSp/UOoJ8xjOBL7puqxfw7TdRzD56u/h/X/8xJ3cQ==",
   "success": true,
-  "projectFilePath": "D:\\Desktop\\Patika\\Link-Bootcamp\\Projeler\\Hafta2\\LinkWeek2Assignment\\ApiWeb\\ApiWeb.csproj",
+  "projectFilePath": "D:\\Desktop\\Patika\\Link-Bootcamp\\Projeler\\week-2-assigment-Burakbgmk\\LinkWeek2Assignment\\ApiWeb\\ApiWeb.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\burak\\.nuget\\packages\\automapper\\11.0.1\\automapper.11.0.1.nupkg.sha512",
+    "C:\\Users\\burak\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\11.0.0\\automapper.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",
+    "C:\\Users\\burak\\.nuget\\packages\\fluentvalidation\\11.0.2\\fluentvalidation.11.0.2.nupkg.sha512",
     "C:\\Users\\burak\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
-    "C:\\Users\\burak\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
+    "C:\\Users\\burak\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\burak\\.nuget\\packages\\microsoft.data.sqlclient\\2.1.4\\microsoft.data.sqlclient.2.1.4.nupkg.sha512",
     "C:\\Users\\burak\\.nuget\\packages\\microsoft.data.sqlclient.sni.runtime\\2.1.1\\microsoft.data.sqlclient.sni.runtime.2.1.1.nupkg.sha512",
     "C:\\Users\\burak\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.5\\microsoft.entityframeworkcore.6.0.5.nupkg.sha512",

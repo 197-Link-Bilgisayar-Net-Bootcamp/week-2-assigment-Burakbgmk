@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "RzQAwIJgrU4C0F3ijZeZfQvNSVvOGxqem0nqWsO/s2/ECDeVt/uoHq5o6Kn0sKQJWyYizWtb7ZYzyfSxjkshQQ==",
+  "dgSpecHash": "uaVhHeWwAY0S5hlwNrCk9EGUdOiOKOtwFeFoJbXMe2FS8155otm6k+VygnZth4ubsnWm6UGDlep/zJdkYGGADw==",
   "success": true,
-  "projectFilePath": "D:\\Desktop\\Patika\\Link-Bootcamp\\Projeler\\Hafta2\\LinkWeek2Assignment\\DependencyInversionExample\\DependencyInversionExample.csproj",
+  "projectFilePath": "D:\\Desktop\\Patika\\Link-Bootcamp\\Projeler\\week-2-assigment-Burakbgmk\\LinkWeek2Assignment\\DependencyInversionExample\\DependencyInversionExample.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

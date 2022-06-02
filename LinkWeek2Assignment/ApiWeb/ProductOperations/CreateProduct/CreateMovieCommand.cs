@@ -1,4 +1,5 @@
 ﻿using ApiWeb.Models;
+using AutoMapper;
 
 namespace ApiWeb.ProductOperations.CreateProduct
 {
@@ -7,10 +8,12 @@ namespace ApiWeb.ProductOperations.CreateProduct
         public CreateMovieModel Model { get; set; }
 
         private readonly ProductContext _dbContext;
+        private readonly IMapper _mapper;
 
-        public CreateMovieCommand(ProductContext dbContext)
+        public CreateMovieCommand(ProductContext dbContext, IMapper mapper)
         {
             _dbContext = dbContext;
+            _mapper = mapper;
         }
 
         public void Handle()
@@ -19,9 +22,7 @@ namespace ApiWeb.ProductOperations.CreateProduct
             if (movie is not null)
                 throw new InvalidOperationException("Movie already exists");
 
-            movie = new Movie();
-            movie.Title = Model.Title;
-            movie.Genre = Model.Genre;
+            movie = _mapper.Map<Movie>(Model);
 
             _dbContext.Movies.Add(movie);
             _dbContext.SaveChanges();

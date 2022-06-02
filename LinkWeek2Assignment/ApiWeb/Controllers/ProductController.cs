@@ -6,6 +6,7 @@ using ApiWeb.ProductOperations.CreateProduct;
 using ApiWeb.ProductOperations.GetProductInfo;
 using ApiWeb.ProductOperations.UpdateProduct;
 using ApiWeb.ProductOperations.DeleteProduct;
+using AutoMapper;
 
 namespace ApiWeb.Controllers
 {
@@ -15,16 +16,18 @@ namespace ApiWeb.Controllers
     {
 
         private readonly ProductContext _context;
-        public ProductController(ProductContext context)
+        private readonly IMapper _mapper;
+        public ProductController(ProductContext context, IMapper mapper)
         {
             _context = context;
+            _mapper = mapper;
         }
 
 
         [HttpGet]
         public IActionResult GetAll()
         {
-            GetMoviesQuerry querry = new GetMoviesQuerry(_context);
+            GetMoviesQuerry querry = new GetMoviesQuerry(_context, _mapper);
             var result = querry.Handle();
             return Ok(result);
         }
@@ -35,7 +38,7 @@ namespace ApiWeb.Controllers
             MovieInfoViewModel result;
             try
             {
-                GetMovieInfoQuerry querry = new GetMovieInfoQuerry(_context);
+                GetMovieInfoQuerry querry = new GetMovieInfoQuerry(_context, _mapper);
                 querry.MovieId = id;
                 result = querry.Handle();
             }
@@ -50,7 +53,7 @@ namespace ApiWeb.Controllers
         [HttpPost]
         public IActionResult AddMovie([FromBody] CreateMovieModel newMovie)
         {
-            CreateMovieCommand command = new CreateMovieCommand(_context);
+            CreateMovieCommand command = new CreateMovieCommand(_context, _mapper);
             try
             {
                 command.Model = newMovie;

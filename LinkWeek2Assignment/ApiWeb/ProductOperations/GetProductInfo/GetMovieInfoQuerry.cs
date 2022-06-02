@@ -1,16 +1,19 @@
 ﻿using ApiWeb.ProductOperations.GetProducts;
+using AutoMapper;
 
 namespace ApiWeb.ProductOperations.GetProductInfo
 {
     public class GetMovieInfoQuerry
     {
         private readonly ProductContext _dbContext;
+        private readonly IMapper _mapper;
 
         public int MovieId { get; set; }
 
-        public GetMovieInfoQuerry(ProductContext dbContext)
+        public GetMovieInfoQuerry(ProductContext dbContext, IMapper mapper)
         {
             _dbContext = dbContext;
+            _mapper = mapper;
         }
 
         public MovieInfoViewModel Handle()
@@ -18,9 +21,7 @@ namespace ApiWeb.ProductOperations.GetProductInfo
             var movie = _dbContext.Movies.Where(x => x.Id == MovieId).SingleOrDefault();
             if (movie is null)
                 throw new InvalidOperationException("Movie is not found!");
-            MovieInfoViewModel vm = new MovieInfoViewModel();
-            vm.Title = movie.Title;
-            vm.Genre = movie.Genre;
+            MovieInfoViewModel vm = _mapper.Map<MovieInfoViewModel>(movie);
             return vm;
         }
     }

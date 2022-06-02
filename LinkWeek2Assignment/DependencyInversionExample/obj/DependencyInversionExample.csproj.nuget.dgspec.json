@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Desktop\\Patika\\Link-Bootcamp\\Projeler\\Hafta2\\LinkWeek2Assignment\\DependencyInversionExample\\DependencyInversionExample.csproj": {}
+    "D:\\Desktop\\Patika\\Link-Bootcamp\\Projeler\\week-2-assigment-Burakbgmk\\LinkWeek2Assignment\\DependencyInversionExample\\DependencyInversionExample.csproj": {}
   },
   "projects": {
-    "D:\\Desktop\\Patika\\Link-Bootcamp\\Projeler\\Hafta2\\LinkWeek2Assignment\\DependencyInversionExample\\DependencyInversionExample.csproj": {
+    "D:\\Desktop\\Patika\\Link-Bootcamp\\Projeler\\week-2-assigment-Burakbgmk\\LinkWeek2Assignment\\DependencyInversionExample\\DependencyInversionExample.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Desktop\\Patika\\Link-Bootcamp\\Projeler\\Hafta2\\LinkWeek2Assignment\\DependencyInversionExample\\DependencyInversionExample.csproj",
+        "projectUniqueName": "D:\\Desktop\\Patika\\Link-Bootcamp\\Projeler\\week-2-assigment-Burakbgmk\\LinkWeek2Assignment\\DependencyInversionExample\\DependencyInversionExample.csproj",
         "projectName": "DependencyInversionExample",
-        "projectPath": "D:\\Desktop\\Patika\\Link-Bootcamp\\Projeler\\Hafta2\\LinkWeek2Assignment\\DependencyInversionExample\\DependencyInversionExample.csproj",
+        "projectPath": "D:\\Desktop\\Patika\\Link-Bootcamp\\Projeler\\week-2-assigment-Burakbgmk\\LinkWeek2Assignment\\DependencyInversionExample\\DependencyInversionExample.csproj",
         "packagesPath": "C:\\Users\\burak\\.nuget\\packages\\",
-        "outputPath": "D:\\Desktop\\Patika\\Link-Bootcamp\\Projeler\\Hafta2\\LinkWeek2Assignment\\DependencyInversionExample\\obj\\",
+        "outputPath": "D:\\Desktop\\Patika\\Link-Bootcamp\\Projeler\\week-2-assigment-Burakbgmk\\LinkWeek2Assignment\\DependencyInversionExample\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\burak\\AppData\\Roaming\\NuGet\\NuGet.Config",

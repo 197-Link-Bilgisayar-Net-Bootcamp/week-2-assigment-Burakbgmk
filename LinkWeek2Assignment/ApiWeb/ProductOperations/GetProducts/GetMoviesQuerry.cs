@@ -1,28 +1,23 @@
 ﻿using ApiWeb.Models;
+using AutoMapper;
 
 namespace ApiWeb.ProductOperations.GetProducts
 {
     public class GetMoviesQuerry
     {
         private readonly ProductContext _dbContext;
+        private readonly IMapper _mapper;
 
-        public GetMoviesQuerry(ProductContext dbContext)
+        public GetMoviesQuerry(ProductContext dbContext, IMapper mapper)
         {
             _dbContext = dbContext;
+            _mapper = mapper;
         }
 
         public List<MoviesViewModel> Handle()
         {
-            var movieList = _dbContext.Movies.OrderBy(x => x.Id).ToList<Movie>();
-            List<MoviesViewModel> vm = new List<MoviesViewModel>();
-            foreach (var movie in movieList)
-            {
-                vm.Add(new MoviesViewModel()
-                {
-                    Title = movie.Title,
-                    Genre = movie.Genre
-                });
-            }
+            var movieList = _dbContext.Movies.OrderBy(x => x.Id).ToList();
+            List<MoviesViewModel> vm = _mapper.Map<List<MoviesViewModel>>(movieList);
             return vm;
         }
     }

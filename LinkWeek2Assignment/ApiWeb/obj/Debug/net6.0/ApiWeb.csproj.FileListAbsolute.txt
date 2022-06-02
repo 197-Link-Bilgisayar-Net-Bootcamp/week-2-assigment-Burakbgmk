@@ -120,3 +120,6 @@ D:\Desktop\Patika\Link-Bootcamp\Projeler\Hafta2\LinkWeek2Assignment\ApiWeb\obj\D
 D:\Desktop\Patika\Link-Bootcamp\Projeler\Hafta2\LinkWeek2Assignment\ApiWeb\obj\Debug\net6.0\ApiWeb.pdb
 D:\Desktop\Patika\Link-Bootcamp\Projeler\Hafta2\LinkWeek2Assignment\ApiWeb\obj\Debug\net6.0\ApiWeb.genruntimeconfig.cache
 D:\Desktop\Patika\Link-Bootcamp\Projeler\Hafta2\LinkWeek2Assignment\ApiWeb\obj\Debug\net6.0\ref\ApiWeb.dll
+D:\Desktop\Patika\Link-Bootcamp\Projeler\week-2-assigment-Burakbgmk\LinkWeek2Assignment\ApiWeb\bin\Debug\net6.0\AutoMapper.dll
+D:\Desktop\Patika\Link-Bootcamp\Projeler\week-2-assigment-Burakbgmk\LinkWeek2Assignment\ApiWeb\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+D:\Desktop\Patika\Link-Bootcamp\Projeler\week-2-assigment-Burakbgmk\LinkWeek2Assignment\ApiWeb\bin\Debug\net6.0\FluentValidation.dll

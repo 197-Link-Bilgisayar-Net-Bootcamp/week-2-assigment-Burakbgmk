@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Desktop\\Patika\\Link-Bootcamp\\Projeler\\Hafta2\\LinkWeek2Assignment\\ApiWeb\\ApiWeb.csproj": {}
+    "D:\\Desktop\\Patika\\Link-Bootcamp\\Projeler\\week-2-assigment-Burakbgmk\\LinkWeek2Assignment\\ApiWeb\\ApiWeb.csproj": {}
   },
   "projects": {
-    "D:\\Desktop\\Patika\\Link-Bootcamp\\Projeler\\Hafta2\\LinkWeek2Assignment\\ApiWeb\\ApiWeb.csproj": {
+    "D:\\Desktop\\Patika\\Link-Bootcamp\\Projeler\\week-2-assigment-Burakbgmk\\LinkWeek2Assignment\\ApiWeb\\ApiWeb.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Desktop\\Patika\\Link-Bootcamp\\Projeler\\Hafta2\\LinkWeek2Assignment\\ApiWeb\\ApiWeb.csproj",
+        "projectUniqueName": "D:\\Desktop\\Patika\\Link-Bootcamp\\Projeler\\week-2-assigment-Burakbgmk\\LinkWeek2Assignment\\ApiWeb\\ApiWeb.csproj",
         "projectName": "ApiWeb",
-        "projectPath": "D:\\Desktop\\Patika\\Link-Bootcamp\\Projeler\\Hafta2\\LinkWeek2Assignment\\ApiWeb\\ApiWeb.csproj",
+        "projectPath": "D:\\Desktop\\Patika\\Link-Bootcamp\\Projeler\\week-2-assigment-Burakbgmk\\LinkWeek2Assignment\\ApiWeb\\ApiWeb.csproj",
         "packagesPath": "C:\\Users\\burak\\.nuget\\packages\\",
-        "outputPath": "D:\\Desktop\\Patika\\Link-Bootcamp\\Projeler\\Hafta2\\LinkWeek2Assignment\\ApiWeb\\obj\\",
+        "outputPath": "D:\\Desktop\\Patika\\Link-Bootcamp\\Projeler\\week-2-assigment-Burakbgmk\\LinkWeek2Assignment\\ApiWeb\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\burak\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -40,6 +40,18 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[11.0.1, )"
+            },
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[11.0.0, )"
+            },
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[11.0.2, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[6.0.5, )"
