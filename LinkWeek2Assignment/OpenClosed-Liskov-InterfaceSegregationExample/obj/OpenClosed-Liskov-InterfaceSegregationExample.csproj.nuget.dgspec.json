@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Desktop\\Patika\\Link-Bootcamp\\Projeler\\week-2-assigment-Burakbgmk\\LinkWeek2Assignment\\OpenClosed-Liskov-InterfaceSegregationExample\\OpenClosed-Liskov-InterfaceSegregationExample.csproj": {}
+    "D:\\Desktop\\Patika\\Link-Bootcamp\\Projeler\\Hafta2\\LinkWeek2Assignment\\OpenClosed-Liskov-InterfaceSegregationExample\\OpenClosed-Liskov-InterfaceSegregationExample.csproj": {}
   },
   "projects": {
-    "D:\\Desktop\\Patika\\Link-Bootcamp\\Projeler\\week-2-assigment-Burakbgmk\\LinkWeek2Assignment\\OpenClosed-Liskov-InterfaceSegregationExample\\OpenClosed-Liskov-InterfaceSegregationExample.csproj": {
+    "D:\\Desktop\\Patika\\Link-Bootcamp\\Projeler\\Hafta2\\LinkWeek2Assignment\\OpenClosed-Liskov-InterfaceSegregationExample\\OpenClosed-Liskov-InterfaceSegregationExample.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Desktop\\Patika\\Link-Bootcamp\\Projeler\\week-2-assigment-Burakbgmk\\LinkWeek2Assignment\\OpenClosed-Liskov-InterfaceSegregationExample\\OpenClosed-Liskov-InterfaceSegregationExample.csproj",
+        "projectUniqueName": "D:\\Desktop\\Patika\\Link-Bootcamp\\Projeler\\Hafta2\\LinkWeek2Assignment\\OpenClosed-Liskov-InterfaceSegregationExample\\OpenClosed-Liskov-InterfaceSegregationExample.csproj",
         "projectName": "OpenClosed-Liskov-InterfaceSegregationExample",
-        "projectPath": "D:\\Desktop\\Patika\\Link-Bootcamp\\Projeler\\week-2-assigment-Burakbgmk\\LinkWeek2Assignment\\OpenClosed-Liskov-InterfaceSegregationExample\\OpenClosed-Liskov-InterfaceSegregationExample.csproj",
+        "projectPath": "D:\\Desktop\\Patika\\Link-Bootcamp\\Projeler\\Hafta2\\LinkWeek2Assignment\\OpenClosed-Liskov-InterfaceSegregationExample\\OpenClosed-Liskov-InterfaceSegregationExample.csproj",
         "packagesPath": "C:\\Users\\burak\\.nuget\\packages\\",
-        "outputPath": "D:\\Desktop\\Patika\\Link-Bootcamp\\Projeler\\week-2-assigment-Burakbgmk\\LinkWeek2Assignment\\OpenClosed-Liskov-InterfaceSegregationExample\\obj\\",
+        "outputPath": "D:\\Desktop\\Patika\\Link-Bootcamp\\Projeler\\Hafta2\\LinkWeek2Assignment\\OpenClosed-Liskov-InterfaceSegregationExample\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\burak\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -1,6 +1,11 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using ApiWeb.Models;
+using ApiWeb.ProductOperations.GetProducts;
+using ApiWeb.ProductOperations.CreateProduct;
+using ApiWeb.ProductOperations.GetProductInfo;
+using ApiWeb.ProductOperations.UpdateProduct;
+using ApiWeb.ProductOperations.DeleteProduct;
 
 namespace ApiWeb.Controllers
 {
@@ -19,50 +24,75 @@ namespace ApiWeb.Controllers
         [HttpGet]
         public IActionResult GetAll()
         {
-            var movieList = _context.Movies.OrderBy(x => x.Id).ToList();
-            return Ok(movieList);
+            GetMoviesQuerry querry = new GetMoviesQuerry(_context);
+            var result = querry.Handle();
+            return Ok(result);
         }
 
         [HttpGet("{id}")]
         public IActionResult GetById(int id)
         {
-            var movie = _context.Movies.Where(x => x.Id == id).SingleOrDefault();
-            if (movie is null)
-                return BadRequest();
-            return Ok(movie);
+            MovieInfoViewModel result;
+            try
+            {
+                GetMovieInfoQuerry querry = new GetMovieInfoQuerry(_context);
+                querry.MovieId = id;
+                result = querry.Handle();
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+            
+            return Ok(result);
         }
 
         [HttpPost]
-        public IActionResult AddMovie(Movie newMovie)
+        public IActionResult AddMovie([FromBody] CreateMovieModel newMovie)
         {
-            var movie = _context.Movies.SingleOrDefault(x => x.Title == newMovie.Title);
-            if (movie is not null)
-                return BadRequest();
-            _context.Movies.Add(newMovie);
-            _context.SaveChanges();
+            CreateMovieCommand command = new CreateMovieCommand(_context);
+            try
+            {
+                command.Model = newMovie;
+                command.Handle();
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
             return Ok();
         }
 
         [HttpPut("{id}")]
-        public IActionResult UpdateMovie(int id, Movie updatedMovie)
+        public IActionResult UpdateMovie(int id, UpdateMovieModel updatedMovie)
         {
-            var movie = _context.Movies.SingleOrDefault(x => x.Id == id);
-            if (movie is null)
-                return BadRequest();
-            movie.Title = updatedMovie.Title != default ? updatedMovie.Title : movie.Title;
-            movie.Genre = updatedMovie.Genre != default ? updatedMovie.Genre : movie.Genre;
-            _context.SaveChanges();
+            try
+            {
+                UpdateMovieInfoCommand command = new UpdateMovieInfoCommand(_context);
+                command.MovieId = id;
+                command.Model = updatedMovie;
+                command.Handle();
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
             return Ok();
         }
 
         [HttpDelete("{id}")]
         public IActionResult DeleteMovie(int id)
         {
-            var movie = _context.Movies.SingleOrDefault(x => x.Id == id);
-            if (movie is null)
-                return BadRequest();
-            _context.Movies.Remove(movie);
-            _context.SaveChanges();
+            try
+            {
+                DeleteMovieCommand command = new DeleteMovieCommand(_context);
+                command.MovieId = id;
+                command.Handle();
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
             return Ok();
         }
 
